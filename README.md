@@ -58,12 +58,12 @@ This report presents two main results:
 ![results_plot](./images/results_plot.png)
 Training was halted by early stopping at epoch 18 for the RNN and epoch 26 for the LSTM.
 
-The LSTM demonstrated more stable training performance, and **although both models showed similar training tendencies**  and final train loss performance, **the LSTM exhibited a much lower and more stable validation loss curve.**
+**Although both models showed similar training tendencies** and final train loss performance, **the LSTM exhibited a much lower and more stable validation loss curve.**
 
 ## Analysis of Temperature Effect on LSTM Text Generation
 
 ## Overview
-This report investigates the impact of varying the temperature parameter $T$ in the softmax function during text generation with an LSTM. 
+This subsection investigates the impact of varying the temperature parameter $T$ in the softmax function during text generation with an LSTM. 
 
 ### Methodology
 - **Model**: LSTM trained on the Shakespeare dataset.
@@ -89,7 +89,6 @@ The outputs are moderately coherent but introduce a greater variety of word choi
 - **Examples**:
   - "ishadions of him to hage of otself; and, it ended to us I much banish'd, but this from their dulls be"
   - "flace. I must not Clarence, Bear me but his mother with this ladies ase, devil Marcius, But still by"
-
 
 ![softmax_T_2.0](./images/softmax_T_2.0.png)
 
