@@ -99,4 +99,6 @@ With $T$ = 2.0, the model produces **very diverse and creative** text outputs, o
   - "ov! Thuing hoit, Foll's jumburous 'bal, out thy slieth free: hi' hoes? which nond I'll assame'tudaut"
 
 ### Conclusion
-The temperature parameter $T$ plays a critical role in controlling the diversity of the generated text in LSTM models. **Lower temperatures result in more predictable** and coherent text, while **higher temperatures encourage creativity** at the expense of grammatical and logical structure. This parameter can be tuned to find the optimal balance for specific applications, whether for creative writing aids or more controlled text generation tasks.
+The temperature parameter $T$ plays a critical role in controlling the diversity of the generated text in LSTM models. **Lower temperatures result in more predictable** and coherent text, while **higher temperatures encourage creativity** at the expense of grammatical and logical structure.
+
+**The key to generating plausible text lies in adjusting $T$ to balance predictability and creativity**, tailored to the text's purpose—lower temperatures for factual accuracy and higher for creative expression.
