@@ -61,7 +61,7 @@ Training was halted by early stopping at epoch 18 for the RNN and epoch 26 for t
 
 **Although both models showed similar training tendencies** and final train loss performance, **the LSTM exhibited a much lower and more stable validation loss curve.**
 
-## Analysis of Temperature Effect on LSTM Text Generation
+## Influence of the variation of the softmax parameter $T$ on text generation
 
 ## Overview
 This subsection investigates the impact of varying the temperature parameter $T$ in the softmax function during text generation with an LSTM. 
