@@ -9,7 +9,7 @@ Assignment #3
 shkim@ds.seoultech.ac.kr
 
 # Abstract
-This project implements two neural networks, **RNN and LSTM, for character-level language modeling using the Shakespeare dataset.** Both models will be trained and then used to generate samples of length 100. 
+This assignment implements two neural networks, **RNN and LSTM, for character-level language modeling using the Shakespeare dataset.** Both models will be trained and then used to generate samples of length 100. 
 
 This report presents two main results:
 
@@ -19,14 +19,14 @@ This report presents two main results:
 
 # Report
 
-## dataset
+## dataset.py
 ![dataset_args](./images/dataset_args.png)
 
 ### Requirements Met:
 - **Character Indexing**: Constructs a dictionary mapping characters to indices and vice versa.
 - **Sequence Preparation**: Splits the text data into sequences of length 30, with corresponding targets.
 
-## model
+## model.py
 ![RNN](./images/RNN.png)
 ![LSTM](./images/LSTM.png)
 
@@ -36,12 +36,12 @@ This report presents two main results:
 ### Additional Techniques:
 - **Dropout**: The LSTM automatically applies recurrent dropout when dropout is used in the package, therefore, a dropout of 0.3 is applied.
 
-## main
+## main.py
 ![main_args1](./images/main_args1.png)
 ![main_args2](./images/main_args2.png)
 
 #### Requirements Met:
-- **Detailed Settings**: The batch size was set to 64, hidden_size to 256, and the optimizer used was Adam.
+- **Detailed Settings**: The batch size is set to 64, hidden size to 256, and the optimizer used is Adam. The cost function employed is CrossEntropyLoss, and SubsetRandomSampler is used to create these DataLoaders.
 - **Plotting**: Generates loss curves for both models to facilitate performance comparison.
   
 #### Additional Techniques:
