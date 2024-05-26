@@ -13,9 +13,9 @@ This project implements two neural networks, **RNN and LSTM, for character-level
 
 This report presents two main results:
 
-(i) a comparison graph of the train and validation losses for both models over the training period 
+(i) a comparison **graph of the train and validation losses** for both models over the training period 
 
-(ii) an analysis of the impact of varying the softmax parameter \_T\_ on text generation.
+(ii) an analysis of the **impact of varying the softmax parameter $T$** on text generation.
 
 # Report
 
