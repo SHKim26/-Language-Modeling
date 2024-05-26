@@ -18,7 +18,7 @@ This report presents two main results:
 (ii) an analysis of the **impact of varying the softmax parameter $T$** on text generation.
 
 # Report
-Before looking at the main results, let's review the key contents of each .py file and the parts that implement the requirements.
+Before looking at the main results, let's review the key contents of each $.py$ file and the parts that implement the requirements.
 
 ## dataset.py
 ![dataset_args](./images/dataset_args.png)
