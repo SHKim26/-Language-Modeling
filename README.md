@@ -41,6 +41,7 @@ This report presents two main results:
 ![main_args2](./images/main_args2.png)
 
 #### Requirements Met:
+- **Detailed Settings**: The batch size was set to 64, hidden_size to 256, and the optimizer used was Adam.
 - **Plotting**: Generates loss curves for both models to facilitate performance comparison.
   
 #### Additional Techniques:
@@ -57,7 +58,7 @@ This report presents two main results:
 ![results_plot](./images/results_plot.png)
 Training was halted by early stopping at epoch 18 for the RNN and epoch 26 for the LSTM.
 
-The LSTM demonstrated more stable training performance, and **although both models showed similar training tendencies** and final train loss performance, **the LSTM exhibited a much lower and more stable validation loss curve.**
+The LSTM demonstrated more stable training performance, and **although both models showed similar training tendencies**  and final train loss performance, **the LSTM exhibited a much lower and more stable validation loss curve.**
 
 ## Analysis of Temperature Effect on LSTM Text Generation
 
@@ -71,8 +72,6 @@ This report investigates the impact of varying the temperature parameter $T$ in 
 
 ### Results
 
-#### Temperature 0.5
-
 ![softmax_T_0.5](./images/softmax_T_0.5.png)
 
 With $T$ = 0.5, the generated text is **more conservative and tends to be more coherent and predictable.** It closely mimics the style and structure of Shakespeare's original texts.
@@ -80,8 +79,6 @@ With $T$ = 0.5, the generated text is **more conservative and tends to be more c
 - **Examples**:
   - "now the people, And see it as you have deserved his eyes to his country."
   - "so see him to the people, Where the gods for the loved thou art the time, that we cause all the end,"
-
-#### Temperature 1.0
 
 ![softmax_T_1.0](./images/softmax_T_1.0.png)
 
@@ -93,10 +90,8 @@ The outputs are moderately coherent but introduce a greater variety of word choi
   - "ishadions of him to hage of otself; and, it ended to us I much banish'd, but this from their dulls be"
   - "flace. I must not Clarence, Bear me but his mother with this ladies ase, devil Marcius, But still by"
 
-#### Temperature 2.0
 
 ![softmax_T_2.0](./images/softmax_T_2.0.png)
-
 
 With $T$ = 2.0, the model produces **very diverse and creative** text outputs, often at the cost of reduced coherence and grammatical correctness.
 
