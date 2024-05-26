@@ -18,6 +18,7 @@ This report presents two main results:
 (ii) an analysis of the **impact of varying the softmax parameter $T$** on text generation.
 
 # Report
+Before looking at the main results, let's review the key contents of each .py file and the parts that implement the requirements.
 
 ## dataset.py
 ![dataset_args](./images/dataset_args.png)
@@ -42,7 +43,7 @@ This report presents two main results:
 
 #### Requirements Met:
 - **Detailed Settings**: The batch size is set to 64, hidden size to 256, and the optimizer used is Adam. The cost function employed is CrossEntropyLoss, and SubsetRandomSampler is used to create these DataLoaders.
-- **Plotting**: Generates loss curves for both models to facilitate performance comparison.
+- **Plotting**: Generates loss curves for both models
   
 #### Additional Techniques:
 - **Early Stopping Implementation**: Includes early stopping to prevent overfitting.
